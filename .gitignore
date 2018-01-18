@@ -1,12 +1,13 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
 .DS_Store
 /build
 /captures
 /tmp
+/target
 /db
 *.log
 .externalNativeBuild
+.idea
+src/main/java/com/idescout/
