@@ -20,7 +20,7 @@ public class OlxSaleThread implements Runnable {
     public static final String ROOMS_TO="4";
     public static final String PRICE_TO="3500000";
     DbUtils db;
-    public static final int PAGES =6;
+    public static final int PAGES =2;
     boolean isNeedMatch = false;
     private static final String OLX_URL =String.format("https://www.olx.ua/i2/nedvizhimost/prodazha-kvartir/kiev/?json=1&search[filter_float_number_of_rooms:from]=%1$s&search[filter_float_number_of_rooms:to]=%2$s&search[district_id]=9&search[order]=created_at:desc&search[filter_float_price:to]=%3$s",
             ROOMS_FROM, ROOMS_TO, PRICE_TO);

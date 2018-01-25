@@ -21,7 +21,7 @@ import static com.popolam.olxparser.App.openUrl;
 public class LunSaleThread implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(LunSaleThread.class);
     private static final Logger loggerUpd = LoggerFactory.getLogger("com.popolam.updated");
-    public static final int PAGES=5;
+    public static final int PAGES=2;
     LunDB db;
     private String url;
     public LunSaleThread(){
@@ -45,6 +45,7 @@ public class LunSaleThread implements Runnable {
                         .validateTLSCertificates(false)
                         .followRedirects(true)
                         .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+                        .timeout(20000)
                         .get();
 
 
